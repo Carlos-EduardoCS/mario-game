@@ -32,6 +32,36 @@
     position: absolute;
     animation: clouds-animation 20s infinite linear;
 }
+
+@media screen and (min-width: 200px) and (max-width: 412px) {
+    .pipe{
+        position: absolute;
+        bottom: 0;
+        width: 60px; 
+        animation: pipe-animation 1.1s infinite linear;
+    }
+
+    .mario{
+        position: absolute;
+        width: 140px;
+        bottom: 0;
+    }
+
+    .jump{
+        animation: jump 650ms ease-out;
+    }
+
+    .game-board{
+        width: 100%;
+        height: 100vh;
+        border-bottom: solid 20px rgb(8, 172, 13);
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(#87CEEB, #E0F6FF);
+    }
+}
+
 @keyframes jump {
     0% {
         bottom: 0;
